@@ -14,6 +14,7 @@
 		5FBC13CE1F16663E000485B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBC13CC1F16663E000485B0 /* LaunchScreen.storyboard */; };
 		5FBC13D91F16663F000485B0 /* react_keybaord_nextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13D81F16663F000485B0 /* react_keybaord_nextTests.swift */; };
 		5FBC13E41F16663F000485B0 /* react_keybaord_nextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13E31F16663F000485B0 /* react_keybaord_nextUITests.swift */; };
+		5FBC13F21F16B44F000485B0 /* KeyboardNextBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13F11F16B44F000485B0 /* KeyboardNextBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5FBC13DF1F16663F000485B0 /* react_keybaord_nextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = react_keybaord_nextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBC13E31F16663F000485B0 /* react_keybaord_nextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = react_keybaord_nextUITests.swift; sourceTree = "<group>"; };
 		5FBC13E51F16663F000485B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FBC13F11F16B44F000485B0 /* KeyboardNextBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNextBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				5FBC13C31F16663E000485B0 /* AppDelegate.swift */,
 				5FBC13C51F16663E000485B0 /* ViewController.swift */,
+				5FBC13F11F16B44F000485B0 /* KeyboardNextBar.swift */,
 				5FBC13C71F16663E000485B0 /* Main.storyboard */,
 				5FBC13CA1F16663E000485B0 /* Assets.xcassets */,
 				5FBC13CC1F16663E000485B0 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				5FBC13C61F16663E000485B0 /* ViewController.swift in Sources */,
 				5FBC13C41F16663E000485B0 /* AppDelegate.swift in Sources */,
+				5FBC13F21F16B44F000485B0 /* KeyboardNextBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = react_keybaord_next/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.badr.react-keybaord-next";
@@ -426,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = react_keybaord_next/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.badr.react-keybaord-next";
@@ -507,6 +513,7 @@
 				5FBC13EA1F16663F000485B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FBC13EB1F16663F000485B0 /* Build configuration list for PBXNativeTarget "react_keybaord_nextTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +522,7 @@
 				5FBC13ED1F16663F000485B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FBC13EE1F16663F000485B0 /* Build configuration list for PBXNativeTarget "react_keybaord_nextUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +531,7 @@
 				5FBC13F01F16663F000485B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
