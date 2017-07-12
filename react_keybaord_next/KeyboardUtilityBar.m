@@ -47,7 +47,19 @@ static const NSInteger BarHeight = 42;
         UIBarButtonItem *separator = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
                                                                                    target:nil
                                                                                    action:nil];
-        self.toolBar.items = @[cancelItem, separator, nextItem];
+        
+        UIBarButtonItem * (^createFixedSeparator)(void) = ^ (void) {
+            UIBarButtonItem *fixedSpaceSeparator = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                                                                                 target:nil
+                                                                                                 action:nil];
+            fixedSpaceSeparator.width = 5;
+            
+            return fixedSpaceSeparator;
+        };
+        
+        self.toolBar.items = @[createFixedSeparator(), cancelItem,
+                               separator,
+                               nextItem, createFixedSeparator()];
         
         self.toolBar.backgroundColor = [UIColor whiteColor];
         self.toolBar.barStyle = UIBarStyleDefault;
