@@ -15,6 +15,7 @@
 		5FBC13D91F16663F000485B0 /* react_keybaord_nextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13D81F16663F000485B0 /* react_keybaord_nextTests.swift */; };
 		5FBC13E41F16663F000485B0 /* react_keybaord_nextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13E31F16663F000485B0 /* react_keybaord_nextUITests.swift */; };
 		5FBC13F21F16B44F000485B0 /* KeyboardNextBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13F11F16B44F000485B0 /* KeyboardNextBar.swift */; };
+		5FBC13F61F16B627000485B0 /* KeyboardUtilityBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13F51F16B627000485B0 /* KeyboardUtilityBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		5FBC13E31F16663F000485B0 /* react_keybaord_nextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = react_keybaord_nextUITests.swift; sourceTree = "<group>"; };
 		5FBC13E51F16663F000485B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FBC13F11F16B44F000485B0 /* KeyboardNextBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNextBar.swift; sourceTree = "<group>"; };
+		5FBC13F31F16B626000485B0 /* react_keybaord_next-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "react_keybaord_next-Bridging-Header.h"; sourceTree = "<group>"; };
+		5FBC13F41F16B627000485B0 /* KeyboardUtilityBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardUtilityBar.h; sourceTree = "<group>"; };
+		5FBC13F51F16B627000485B0 /* KeyboardUtilityBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardUtilityBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,13 @@
 				5FBC13C31F16663E000485B0 /* AppDelegate.swift */,
 				5FBC13C51F16663E000485B0 /* ViewController.swift */,
 				5FBC13F11F16B44F000485B0 /* KeyboardNextBar.swift */,
+				5FBC13F41F16B627000485B0 /* KeyboardUtilityBar.h */,
+				5FBC13F51F16B627000485B0 /* KeyboardUtilityBar.m */,
 				5FBC13C71F16663E000485B0 /* Main.storyboard */,
 				5FBC13CA1F16663E000485B0 /* Assets.xcassets */,
 				5FBC13CC1F16663E000485B0 /* LaunchScreen.storyboard */,
 				5FBC13CF1F16663E000485B0 /* Info.plist */,
+				5FBC13F31F16B626000485B0 /* react_keybaord_next-Bridging-Header.h */,
 			);
 			path = react_keybaord_next;
 			sourceTree = "<group>";
@@ -196,6 +203,7 @@
 				TargetAttributes = {
 					5FBC13BF1F16663E000485B0 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					5FBC13D31F16663F000485B0 = {
@@ -263,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FBC13C61F16663E000485B0 /* ViewController.swift in Sources */,
+				5FBC13F61F16B627000485B0 /* KeyboardUtilityBar.m in Sources */,
 				5FBC13C41F16663E000485B0 /* AppDelegate.swift in Sources */,
 				5FBC13F21F16B44F000485B0 /* KeyboardNextBar.swift in Sources */,
 			);
@@ -418,11 +427,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = react_keybaord_next/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.badr.react-keybaord-next";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "react_keybaord_next/react_keybaord_next-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -431,11 +443,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = react_keybaord_next/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.badr.react-keybaord-next";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "react_keybaord_next/react_keybaord_next-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
