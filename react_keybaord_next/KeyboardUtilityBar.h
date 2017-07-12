@@ -10,6 +10,7 @@
 
 @interface KeyboardUtilityBar : NSObject
 
-- (instancetype)init;
+- (nullable instancetype)initWithNextCallBack:(nonnull void (^) (void))nextCallBack
+                              cancelCalllBack:(nonnull void (^) (void))cancelCallBack;
 
 @end

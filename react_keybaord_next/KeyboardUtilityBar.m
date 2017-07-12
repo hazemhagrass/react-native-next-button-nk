@@ -8,7 +8,9 @@
 
 #import "KeyboardUtilityBar.h"
 
+
 static const NSInteger BarHeight = 42;
+
 
 @interface KeyboardUtilityBar ()
 
@@ -16,7 +18,11 @@ static const NSInteger BarHeight = 42;
 
 @property (readonly, nonatomic) UIWindow *window;
 
+@property (copy, nonatomic) void (^cancelCallback)(void);
+@property (copy, nonatomic) void (^nextCallback)(void);
+
 @end
+
 
 @implementation KeyboardUtilityBar
 
@@ -48,7 +54,7 @@ static const NSInteger BarHeight = 42;
     return _toolBar;
 }
 
-- (instancetype)init {
+- (instancetype)initWithNextCallBack:(void (^)(void))nextCallBack cancelCalllBack:(void (^)(void))cancelCallBack {
     if (self = [super init]) {
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(keyboardUp)
@@ -56,6 +62,8 @@ static const NSInteger BarHeight = 42;
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(keyboardDown)
                                                      name:UIKeyboardWillHideNotification object:nil];
+        self.cancelCallback = cancelCallBack;
+        self.nextCallback = nextCallBack;
     }
     return self;
 }
@@ -65,11 +73,11 @@ static const NSInteger BarHeight = 42;
 }
 
 - (void)nextTapped {
-    
+    self.nextCallback();
 }
 
 - (void)cancel {
-    
+    self.cancelCallback();
 }
 
 - (void)keyboardUp {
