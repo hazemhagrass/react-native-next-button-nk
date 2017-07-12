@@ -44,7 +44,10 @@ static const NSInteger BarHeight = 42;
         UIBarButtonItem *cancelItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
                                                                                     target:self
                                                                                     action:@selector(cancel)];
-        self.toolBar.items = @[nextItem, cancelItem];
+        UIBarButtonItem *separator = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                                   target:nil
+                                                                                   action:nil];
+        self.toolBar.items = @[cancelItem, separator, nextItem];
         
         self.toolBar.backgroundColor = [UIColor whiteColor];
         self.toolBar.barStyle = UIBarStyleDefault;
