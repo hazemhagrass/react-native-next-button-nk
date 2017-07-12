@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var kub: KeyboardUtilityBar!
+    
+    @IBOutlet weak var numericalTextField: UITextField!
+    @IBOutlet weak var textOnlyTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.kub = KeyboardUtilityBar(nextCallBack: self.showNextKeyboard, cancelCalllBack: self.dismissKeyboard)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +25,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func dismissKeyboard() {
+        self.numericalTextField.resignFirstResponder()
+        self.textOnlyTextField.resignFirstResponder()
+    }
+    
+    func showNextKeyboard() {
+        if self.numericalTextField.isFirstResponder {
+            self.textOnlyTextField.becomeFirstResponder()
+        }
+        else {
+            self.numericalTextField.becomeFirstResponder()
+        }
+    }
 }
 
