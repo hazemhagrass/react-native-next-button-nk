@@ -6,8 +6,10 @@
 //  Copyright © 2017 Mohannad A. Hassan. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface KeyboardUtilityBar : NSObject
+
+- (instancetype)init;
 
 @end
