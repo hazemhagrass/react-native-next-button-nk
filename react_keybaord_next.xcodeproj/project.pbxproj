@@ -14,7 +14,6 @@
 		5FBC13CE1F16663E000485B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBC13CC1F16663E000485B0 /* LaunchScreen.storyboard */; };
 		5FBC13D91F16663F000485B0 /* react_keybaord_nextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13D81F16663F000485B0 /* react_keybaord_nextTests.swift */; };
 		5FBC13E41F16663F000485B0 /* react_keybaord_nextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13E31F16663F000485B0 /* react_keybaord_nextUITests.swift */; };
-		5FBC13F21F16B44F000485B0 /* KeyboardNextBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13F11F16B44F000485B0 /* KeyboardNextBar.swift */; };
 		5FBC13F61F16B627000485B0 /* KeyboardUtilityBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13F51F16B627000485B0 /* KeyboardUtilityBar.m */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +48,6 @@
 		5FBC13DF1F16663F000485B0 /* react_keybaord_nextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = react_keybaord_nextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBC13E31F16663F000485B0 /* react_keybaord_nextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = react_keybaord_nextUITests.swift; sourceTree = "<group>"; };
 		5FBC13E51F16663F000485B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FBC13F11F16B44F000485B0 /* KeyboardNextBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNextBar.swift; sourceTree = "<group>"; };
 		5FBC13F31F16B626000485B0 /* react_keybaord_next-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "react_keybaord_next-Bridging-Header.h"; sourceTree = "<group>"; };
 		5FBC13F41F16B627000485B0 /* KeyboardUtilityBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardUtilityBar.h; sourceTree = "<group>"; };
 		5FBC13F51F16B627000485B0 /* KeyboardUtilityBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardUtilityBar.m; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			children = (
 				5FBC13C31F16663E000485B0 /* AppDelegate.swift */,
 				5FBC13C51F16663E000485B0 /* ViewController.swift */,
-				5FBC13F11F16B44F000485B0 /* KeyboardNextBar.swift */,
 				5FBC13F41F16B627000485B0 /* KeyboardUtilityBar.h */,
 				5FBC13F51F16B627000485B0 /* KeyboardUtilityBar.m */,
 				5FBC13C71F16663E000485B0 /* Main.storyboard */,
@@ -273,7 +270,6 @@
 				5FBC13C61F16663E000485B0 /* ViewController.swift in Sources */,
 				5FBC13F61F16B627000485B0 /* KeyboardUtilityBar.m in Sources */,
 				5FBC13C41F16663E000485B0 /* AppDelegate.swift in Sources */,
-				5FBC13F21F16B44F000485B0 /* KeyboardNextBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
