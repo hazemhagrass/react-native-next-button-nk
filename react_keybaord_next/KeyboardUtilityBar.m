@@ -8,7 +8,7 @@
 
 #import "KeyboardUtilityBar.h"
 
-static const NSInteger BarHeight = 35;
+static const NSInteger BarHeight = 42;
 
 @interface KeyboardUtilityBar ()
 
@@ -73,11 +73,11 @@ static const NSInteger BarHeight = 35;
 }
 
 - (void)keyboardUp {
-    
+    [self.window addSubview:self.toolBar];
 }
 
 - (void)keyboardDown {
-    
+    [self.toolBar removeFromSuperview];
 }
 
 @end
