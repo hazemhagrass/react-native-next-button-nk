@@ -1,3 +1,3 @@
 import { AppRegistry } from 'react-native';
 import App from './App';
-AppRegistry.registerComponent('awesome_o', () => App);
+AppRegistry.registerComponent('react_keyboard_utility_bar', () => App);

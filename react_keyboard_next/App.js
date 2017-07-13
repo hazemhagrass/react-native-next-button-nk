@@ -80,9 +80,3 @@ const subscription = calendarManagerEmitter.addListener(
     );
   }
 }
-
-// skip these lines if using Create React Native App
-AppRegistry.registerComponent(
- 'AwesomeProject',
- () => UselessTextInputMultiline
-);
