@@ -30,6 +30,7 @@
 }
 
 - (void)stopObserving {
+    [self.keyboard stop];
     self.keyboard = nil;
 }
 
