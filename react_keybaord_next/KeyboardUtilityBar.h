@@ -13,4 +13,6 @@
 - (nullable instancetype)initWithNextCallBack:(nonnull void (^) (void))nextCallBack
                               cancelCalllBack:(nonnull void (^) (void))cancelCallBack;
 
+- (void)stop;
+
 @end
