@@ -15,6 +15,7 @@
 		5FBC13D91F16663F000485B0 /* react_keybaord_nextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13D81F16663F000485B0 /* react_keybaord_nextTests.swift */; };
 		5FBC13E41F16663F000485B0 /* react_keybaord_nextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13E31F16663F000485B0 /* react_keybaord_nextUITests.swift */; };
 		5FBC13F61F16B627000485B0 /* KeyboardUtilityBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13F51F16B627000485B0 /* KeyboardUtilityBar.m */; };
+		5FBC13FA1F16F862000485B0 /* KeyboardUtilityBarInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC13F91F16F862000485B0 /* KeyboardUtilityBarInterface.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		5FBC13F31F16B626000485B0 /* react_keybaord_next-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "react_keybaord_next-Bridging-Header.h"; sourceTree = "<group>"; };
 		5FBC13F41F16B627000485B0 /* KeyboardUtilityBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardUtilityBar.h; sourceTree = "<group>"; };
 		5FBC13F51F16B627000485B0 /* KeyboardUtilityBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardUtilityBar.m; sourceTree = "<group>"; };
+		5FBC13F81F16F862000485B0 /* KeyboardUtilityBarInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardUtilityBarInterface.h; sourceTree = "<group>"; };
+		5FBC13F91F16F862000485B0 /* KeyboardUtilityBarInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardUtilityBarInterface.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				5FBC13C51F16663E000485B0 /* ViewController.swift */,
 				5FBC13F41F16B627000485B0 /* KeyboardUtilityBar.h */,
 				5FBC13F51F16B627000485B0 /* KeyboardUtilityBar.m */,
+				5FBC13F81F16F862000485B0 /* KeyboardUtilityBarInterface.h */,
+				5FBC13F91F16F862000485B0 /* KeyboardUtilityBarInterface.m */,
 				5FBC13C71F16663E000485B0 /* Main.storyboard */,
 				5FBC13CA1F16663E000485B0 /* Assets.xcassets */,
 				5FBC13CC1F16663E000485B0 /* LaunchScreen.storyboard */,
@@ -270,6 +275,7 @@
 				5FBC13C61F16663E000485B0 /* ViewController.swift in Sources */,
 				5FBC13F61F16B627000485B0 /* KeyboardUtilityBar.m in Sources */,
 				5FBC13C41F16663E000485B0 /* AppDelegate.swift in Sources */,
+				5FBC13FA1F16F862000485B0 /* KeyboardUtilityBarInterface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
