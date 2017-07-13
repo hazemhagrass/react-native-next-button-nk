@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <React/RCTBridgeModule.h>
+#import <React/RCTEventEmitter.h>
 
-@interface KeyboardUtilityBarInterface : NSObject
+@interface KeyboardUtilityBarInterface : RCTEventEmitter <RCTBridgeModule>
 
 @end
