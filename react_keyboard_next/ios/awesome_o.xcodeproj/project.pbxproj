@@ -35,8 +35,8 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* awesome_oTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* awesome_oTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
-		5FBC140A1F16FA4B000485B0 /* KeyboardUtilityBarInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC14061F16FA4B000485B0 /* KeyboardUtilityBarInterface.m */; };
-		5FBC140B1F16FA4B000485B0 /* KeyboardUtilityBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC14081F16FA4B000485B0 /* KeyboardUtilityBar.m */; };
+		5F3A6D661F17E4EE00409770 /* KeyboardUtilityBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A6D5C1F17E4EE00409770 /* KeyboardUtilityBar.m */; };
+		5F3A6D671F17E4EE00409770 /* KeyboardUtilityBarInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A6D5E1F17E4EE00409770 /* KeyboardUtilityBarInterface.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -269,10 +269,10 @@
 		2D02E47B1E0B4A5D006451C7 /* awesome_o-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "awesome_o-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* awesome_o-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "awesome_o-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
-		5FBC14061F16FA4B000485B0 /* KeyboardUtilityBarInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardUtilityBarInterface.m; sourceTree = "<group>"; };
-		5FBC14071F16FA4B000485B0 /* KeyboardUtilityBarInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardUtilityBarInterface.h; sourceTree = "<group>"; };
-		5FBC14081F16FA4B000485B0 /* KeyboardUtilityBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardUtilityBar.m; sourceTree = "<group>"; };
-		5FBC14091F16FA4B000485B0 /* KeyboardUtilityBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardUtilityBar.h; sourceTree = "<group>"; };
+		5F3A6D5B1F17E4EE00409770 /* KeyboardUtilityBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardUtilityBar.h; sourceTree = "<group>"; };
+		5F3A6D5C1F17E4EE00409770 /* KeyboardUtilityBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardUtilityBar.m; sourceTree = "<group>"; };
+		5F3A6D5D1F17E4EE00409770 /* KeyboardUtilityBarInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardUtilityBarInterface.h; sourceTree = "<group>"; };
+		5F3A6D5E1F17E4EE00409770 /* KeyboardUtilityBarInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardUtilityBarInterface.m; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -409,10 +409,6 @@
 		13B07FAE1A68108700A75B9A /* awesome_o */ = {
 			isa = PBXGroup;
 			children = (
-				5FBC14071F16FA4B000485B0 /* KeyboardUtilityBarInterface.h */,
-				5FBC14061F16FA4B000485B0 /* KeyboardUtilityBarInterface.m */,
-				5FBC14091F16FA4B000485B0 /* KeyboardUtilityBar.h */,
-				5FBC14081F16FA4B000485B0 /* KeyboardUtilityBar.m */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -448,6 +444,17 @@
 				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5F3A6D531F17E4EE00409770 /* KeyboardUtilityBarInterface */ = {
+			isa = PBXGroup;
+			children = (
+				5F3A6D5B1F17E4EE00409770 /* KeyboardUtilityBar.h */,
+				5F3A6D5C1F17E4EE00409770 /* KeyboardUtilityBar.m */,
+				5F3A6D5D1F17E4EE00409770 /* KeyboardUtilityBarInterface.h */,
+				5F3A6D5E1F17E4EE00409770 /* KeyboardUtilityBarInterface.m */,
+			);
+			path = KeyboardUtilityBarInterface;
 			sourceTree = "<group>";
 		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
@@ -489,6 +496,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				5F3A6D531F17E4EE00409770 /* KeyboardUtilityBarInterface */,
 				13B07FAE1A68108700A75B9A /* awesome_o */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* awesome_oTests */,
@@ -945,8 +953,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FBC140A1F16FA4B000485B0 /* KeyboardUtilityBarInterface.m in Sources */,
-				5FBC140B1F16FA4B000485B0 /* KeyboardUtilityBar.m in Sources */,
+				5F3A6D671F17E4EE00409770 /* KeyboardUtilityBarInterface.m in Sources */,
+				5F3A6D661F17E4EE00409770 /* KeyboardUtilityBar.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
